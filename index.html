@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sky Catcher Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Sky Catcher</h1>
+        <div id="instructions">
+            <p>Move the basket with <b>Left/Right Arrows</b>.<br>Catch items to score. Miss 10 and it's Game Over!</p>
+        </div>
+        <div class="settings">
+            <select id="speed-select">
+                <option value="2">Slow</option>
+                <option value="4" selected>Normal</option>
+                <option value="7">Fast</option>
+            </select>
+            <button id="start-btn">Start Game</button>
+        </div>
+        <div class="stats">
+            <span>Score: <span id="score">0</span></span>
+            <span>NG: <span id="ng-count">0</span>/10</span>
+        </div>
+        <canvas id="gameCanvas" width="400" height="500"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
