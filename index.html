@@ -1,74 +1,75 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;ja&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot; /&gt;
-&lt;title&gt;最終発表 用 レイアウト&lt;/title&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;page&quot;&gt;
-&lt;!-- 上段：プログラム名・開発者 --&gt;
-&lt;header class=&quot;top-section&quot;&gt;
-&lt;h1 class=&quot;program-title&quot;&gt;skycatchetr&lt;/h1&gt;
-&lt;p class=&quot;developer-name&quot;&gt;開発者：25S05 kurmi&lt;/p&gt;
-&lt;/header&gt;
-&lt;!-- 中段：左＝動作イメージ画像 / 右＝概要・アピールポイント --&gt;
-&lt;main class=&quot;middle-section&quot;&gt;
-&lt;!-- 左：動作イメージ画像（images/image.png を表示） --&gt;
-&lt;section class=&quot;preview-area&quot;&gt;
-&lt;h2 class=&quot;section-title&quot;&gt;プログラム動作イメージ&lt;/h2&gt;
-&lt;div class=&quot;preview-box&quot;&gt;
-&lt;!-- 各自が images フォルダに image.png ファイルを保存 --&gt;
-&lt;img
-src=&quot;images/image.png&quot;
-alt=&quot;プログラム動作イメージ&quot;
-class=&quot;preview-image&quot;
-/&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- 右：概要とアピールポイント --&gt;
-&lt;section class=&quot;description-area&quot;&gt;
-&lt;h2 class=&quot;section-title&quot;&gt;プログラム概要とアピールポイント&lt;/h2&gt;
-&lt;div class=&quot;description-box&quot;&gt;
-&lt;h3&gt;概要&lt;/h3&gt;
-&lt;p&gt;
-矢印キーで操作、速度を選んで自分のペースで遊べるキャッチゲーム。&lt;br /&g
-ミスしても再挑戦しやすく、スコアで達成感。ボタンで簡単スタート。&lt;br /&gt;
-&lt;/p&gt;
-&lt;h3&gt;アピールポイント&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ワンクリックで気軽に始められる&lt;/li&gt;
-&lt;li&gt;速度選択で自分のレベルに合わせられる&lt;/li&gt;
-&lt;li&gt;スコアとミス表示で成長が実感できる&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/section&gt;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>最終発表 用 レイアウト</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+<!-- 上段：プログラム名・開発者 -->
+<header class="top-section">
+<h1 class="program-title">（プログラム名を書いてください）</h1>
+<p class="developer-name">開発者：（学籍番号と氏名を書いてください）</p>
+</header>
+<!-- 中段：左＝動作イメージ画像 / 右＝概要・アピールポイント -->
+<main class="middle-section">
+<!-- 左：動作イメージ画像（images/image.png を表示） -->
+<section class="preview-area">
+<h2 class="section-title">プログラム動作イメージ</h2>
+<div class="preview-box">
+<!-- 各自が images フォルダに image.png ファイルを保存 -->
+<img
+src="images/image.png"
+alt="プログラム動作イメージ"
+class="preview-image"
+/>
+</div>
+</section>
+<!-- 右：概要とアピールポイント -->
+<section class="description-area">
+<h2 class="section-title">プログラム概要とアピールポイント</h2>
+<div class="description-box">
+<h3>概要</h3>
+<p>
+矢印キーで操作、速度を選んで自分のペースで遊べるキャッチゲーム。<br />
+ミスしても再挑戦しやすく、スコアで達成感。ボタンで簡単スタート。
+<br />
+</p>
+<h3>アピールポイント</h3>
+<ul>
+<li>ワンクリックで気軽に始められる</li>
+<li>速度選択で自分のレベルに合わせられる</li>
+<li>スコアとミス表示で成長が実感できる</li>
+</ul>
+</div>
+</section>
 
-&lt;/main&gt;
-&lt;!-- 下段：開発環境・プログラム起動ボタン --&gt;
-&lt;footer class=&quot;bottom-section&quot;&gt;
-&lt;div class=&quot;info-row&quot;&gt;
-&lt;span class=&quot;info-label&quot;&gt;開発環境：&lt;/span&gt;
-&lt;span class=&quot;info-value&quot;&gt;
+</main>
+<!-- 下段：開発環境・プログラム起動ボタン -->
+<footer class="bottom-section">
+<div class="info-row">
+<span class="info-label">開発環境：</span>
+<span class="info-value">
 GitHub（HTML / CSS / JavaScript）
-&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;info-row&quot;&gt;
-&lt;label class=&quot;info-label&quot; for=&quot;program-path&quot;&gt;
+</span>
+</div>
+<div class="info-row">
+<label class="info-label" for="program-path">
 index.html の場所：
-&lt;/label&gt;
-&lt;input
-id=&quot;program-path&quot;
-class=&quot;path-input&quot;
-type=&quot;text&quot;
-placeholder=&quot;file:///C:/Users/user/Documents/mygame/index.html&quot;
-/&gt;
-&lt;button id=&quot;launch-btn&quot; class=&quot;launch-button&quot;&gt;
+</label>
+<input
+id="program-path"
+class="path-input"
+type="text"
+placeholder="file:///C:/Users/user/Documents/mygame/index.html"
+/>
+<button id="launch-btn" class="launch-button">
 プログラム起動
-&lt;/button&gt;
-&lt;/div&gt;
-&lt;/footer&gt;
-&lt;/div&gt;
-&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+</button>
+</div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
