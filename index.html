@@ -1,30 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sky Catcher Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="game-container">
-        <h1>Sky Catcher</h1>
-        <div id="instructions">
-            <p>Move the basket with <b>Left/Right Arrows</b>.<br>Catch items to score. Miss 10 and it's Game Over!</p>
-        </div>
-        <div class="settings">
-            <select id="speed-select">
-                <option value="2">Slow</option>
-                <option value="4" selected>Normal</option>
-                <option value="7">Fast</option>
-            </select>
-            <button id="start-btn">Start Game</button>
-        </div>
-        <div class="stats">
-            <span>Score: <span id="score">0</span></span>
-            <span>NG: <span id="ng-count">0</span>/10</span>
-        </div>
-        <canvas id="gameCanvas" width="400" height="500"></canvas>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;title&gt;最終発表 用 レイアウト&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;page&quot;&gt;
+&lt;!-- 上段：プログラム名・開発者 --&gt;
+&lt;header class=&quot;top-section&quot;&gt;
+&lt;h1 class=&quot;program-title&quot;&gt;（プログラム名を書いてください）&lt;/h1&gt;
+&lt;p class=&quot;developer-name&quot;&gt;開発者：（学籍番号と氏名を書いてください）&lt;/p&gt;
+&lt;/header&gt;
+&lt;!-- 中段：左＝動作イメージ画像 / 右＝概要・アピールポイント --&gt;
+&lt;main class=&quot;middle-section&quot;&gt;
+&lt;!-- 左：動作イメージ画像（images/image.png を表示） --&gt;
+&lt;section class=&quot;preview-area&quot;&gt;
+&lt;h2 class=&quot;section-title&quot;&gt;プログラム動作イメージ&lt;/h2&gt;
+&lt;div class=&quot;preview-box&quot;&gt;
+&lt;!-- 各自が images フォルダに image.png ファイルを保存 --&gt;
+&lt;img
+src=&quot;images/image.png&quot;
+alt=&quot;プログラム動作イメージ&quot;
+class=&quot;preview-image&quot;
+/&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- 右：概要とアピールポイント --&gt;
+&lt;section class=&quot;description-area&quot;&gt;
+&lt;h2 class=&quot;section-title&quot;&gt;プログラム概要とアピールポイント&lt;/h2&gt;
+&lt;div class=&quot;description-box&quot;&gt;
+&lt;h3&gt;概要&lt;/h3&gt;
+&lt;p&gt;
+（概要を書いてください）&lt;br /&gt;
+（概要を書いてください）&lt;br /&gt;
+（概要を書いてください）&lt;br /&gt;
+&lt;/p&gt;
+&lt;h3&gt;アピールポイント&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;（アピールポイントを書いてください）&lt;/li&gt;
+&lt;li&gt;（アピールポイントを書いてください）&lt;/li&gt;
+&lt;li&gt;（アピールポイントを書いてください）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;/main&gt;
+&lt;!-- 下段：開発環境・プログラム起動ボタン --&gt;
+&lt;footer class=&quot;bottom-section&quot;&gt;
+&lt;div class=&quot;info-row&quot;&gt;
+&lt;span class=&quot;info-label&quot;&gt;開発環境：&lt;/span&gt;
+&lt;span class=&quot;info-value&quot;&gt;
+GitHub（HTML / CSS / JavaScript）
+&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;info-row&quot;&gt;
+&lt;label class=&quot;info-label&quot; for=&quot;program-path&quot;&gt;
+index.html の場所：
+&lt;/label&gt;
+&lt;input
+id=&quot;program-path&quot;
+class=&quot;path-input&quot;
+type=&quot;text&quot;
+placeholder=&quot;file:///C:/Users/user/Documents/mygame/index.html&quot;
+/&gt;
+&lt;button id=&quot;launch-btn&quot; class=&quot;launch-button&quot;&gt;
+プログラム起動
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
